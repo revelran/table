@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+    <style>
+        form {
+            width: 50%;
+            background-color: aquamarine;
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid rebeccapurple;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h3>Форма регистрации</h3>
+        <fieldset>
+            <legend>Регистрационные данные</legend>
+            Введите логин <input type="text" placeholder="Ваш логин" name="login"> <br> <br>
+            Введите пароль <inpuСt type="password" placeholder="Ваш пароль" name="pass"> <br> <br>
+                Введите почту <input type="email" name="email" required> <br> <br>
+                Введите дату рождения <input type="date" name="date"> <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Ваши интересы</legend>
+            <input type="checkbox" name="interest" id="music">
+            <label for="music">Музыка</label> <br>
+            <label>
+                <input type="checkbox" name="interest"> Спорт
+            </label> <br>
+            <label>
+                <input type="checkbox" name="interest"> Программирование
+            </label> <br> <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Род деятельности</legend>
+            <label>
+                <input type="radio" name="radio">Работаю
+            </label> <br>
+            <label>
+                <input type="radio" name="radio">Работаю дома
+            </label> <br><label>
+                <input type="radio" name="radio">Работаю в офисе
+            </label> <br>
+        </fieldset>
+        <h3>Укажите город</h3>
+        <select name="cite">
+            <option selected disabled>Выберите город</option>
+            <option value="Тюмень">Тюмень</option>
+            <option value="Тюмень">Омск</option>
+            <option value="Тюмень">Москва</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="about-info" placeholder="Информация обо мне" cols="50" rows="10"></textarea>
+        <input type="submit" value="Отправить в школу">
+    </form>
+</body>
+
+</html>
